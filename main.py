@@ -13,7 +13,7 @@ async def get_user_id(phone_number: str):
     try:
         client = TelegramClient('session_name', api_id, api_hash)
 
-        await client.start()
+        await client.start(bot_token='6913651280:AAHqctuJXTSuQPBiej2tKJ8-6DJwGzdR1CQ')
 
         entity = await client.get_input_entity(phone_number)
         if entity:
